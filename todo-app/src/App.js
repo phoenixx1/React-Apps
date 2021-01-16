@@ -14,11 +14,6 @@ function App() {
     getLocalTodos();
   }, []);
 
-  useEffect(() => {
-    filterHandler();
-    saveLocalTodos();
-  }, [todos, status]);
-
   const filterHandler = () => {
     switch (status) {
       case "completed":
@@ -45,6 +40,10 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    filterHandler();
+    saveLocalTodos();
+  }, [todos, status]);
   return (
     <div className="App">
       <header>
