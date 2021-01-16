@@ -9,11 +9,6 @@ function App() {
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
 
-  //Run once when app starts to get local stored data
-  useEffect(() => {
-    getLocalTodos();
-  }, []);
-
   const filterHandler = () => {
     switch (status) {
       case "completed":
@@ -39,6 +34,11 @@ function App() {
       setTodos(todoLocal);
     }
   };
+
+  //Run once when app starts to get local stored data
+  useEffect(() => {
+    getLocalTodos();
+  }, []);
 
   useEffect(() => {
     filterHandler();
