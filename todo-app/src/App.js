@@ -44,6 +44,7 @@ function App() {
     filterHandler();
     saveLocalTodos();
   }, [todos, status]);
+
   return (
     <div className="App">
       <header>
