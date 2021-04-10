@@ -2,6 +2,7 @@ Simple app that demonstrates the n-api function by calling a C++ function that w
 (For this project when you upload any file it returns it's name back with prefix 'Hello')
 
 ## To build the project
+Run `npm install -g node-gyp` before procedding (global installation of node-gyp).  
 
 `npm i`  
 `node-gyp configure`  
