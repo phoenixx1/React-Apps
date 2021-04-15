@@ -1,7 +1,8 @@
-Simple app that demonstrates the n-api function by calling a C++ function that when passed a string returns with 'Hello 'string''.
+Simple app that demonstrates the n-api function by calling a C++ function that when passed a string returns with 'Hello 'string''.  
 (For this project when you upload any file it returns it's name back with prefix 'Hello')
 
 ## To build the project
+Run `npm install -g node-gyp` before procedding (global installation of node-gyp).  
 
 `npm i`  
 `node-gyp configure`  
@@ -12,4 +13,4 @@ Simple app that demonstrates the n-api function by calling a C++ function that w
 1. Open terminal and type `nodemon server.js` to start the Node.js server.
 2. `npm start` to start the ReactJS app.
 
-To understand the cpp code go into '[srccpp](./srccpp)' folder.
+To understand the cpp code go into [srccpp](./srccpp) folder.
